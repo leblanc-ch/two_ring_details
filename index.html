@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Ring: background and design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Two Ring : background and design</h1>
+        <nav>
+            <a href="https://example.com">Robotic Arm</a>
+            <a href="https://leblanc-ch.github.io/portfolio/index.html">Back to Portfolio</a>
+        </nav>
+    </div>
+</header>
+
+    <section>
+		<h2>Background</h2>
+		<p>When we think of blindness, we might think of someone completely lacking sight, but
+this is referred to as “total blindness”, and it only affects 15% of those with eye disorders
+<a href="https://www.afb.org/blindness-and-low-vision/eye-conditions/low-vision-and-legal-blindness-terms-and-descriptions
+" target="_blank" rel="noopener noreferrer" class="citation">[1]</a>. This
+leaves 85% with some remaining sight, and for that reason, many low vision people rely on some
+sort of text-to-speech software when using a computer, which gives them an audio description of the text on websites. <br><br>
+The problem is that not all things on a website are text-based, images, for
+example. For that, we have “alt-text”, a brief text description of the image, which can be read by
+a screen reader, and that gives the image’s basic context to the page.</p>
+
+		<h2>Problem</h2>
+		<p>With that said, not all webpages are accessibility-friendly. In a 2024 study of the top
+million webpages, it was found that 54.5% of the pages were missing alt-text on their images,
+which makes it the second most prevalent web accessibility failure <a href="https://webaim.org/projects/million/" target="_blank" rel="noopener noreferrer" class="citation">[2]</a>.
+
+<br><img src="web_page.png" alt="Graph Displaying common WCAG 2 Errors" class="project-image">
+</p>
+
+<h2>Solution</h2>
+<p>So to combat this, what I propose is Two Ring, an AI audio assistant for those with low vision,
+which works like the snip tool, if the snip tool gave a verbal description of the image it was
+taking.<p/>
+
+<h2>Interface</h2>
+<img src="flowchart_diagram.png" alt="Two Ring Usage Flowchart" class="project-image"></img>
+<p>I designed a simple interface, for the purpose of being easy to use. It consists of two buttons:
+'Capture' and 'Stop'. Clicking the 'Capture' button allows the user to click and drag to capture an
+image, and a text description is created from that image using a machine learning model. Next,
+the text description is sent to a text-to-speech software, which reads out the audio description of
+the image. From there, the user can capture another image, or they can click ‘Stop’ which exits
+the program.
+</p>
+
+<h2>Demo</h2>
+<div class="video-container">
+  <iframe 
+    width="800" 
+    height="600" 
+    src="https://www.youtube.com/embed/axXtVPxLhSE"
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+    </section>
+	
+
+</body>
+</html>
